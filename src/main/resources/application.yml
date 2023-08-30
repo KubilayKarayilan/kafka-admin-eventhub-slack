@@ -1,0 +1,25 @@
+spring:
+    application:
+        name: "inmeta-kafka-admin"
+    sleuth:
+      kafka:
+          enabled: false
+kafka:
+    bootstrapServers: "ehn-eventhubs-formuesobjekter-sit-test-ne-001.servicebus.windows.net:9093"
+    sharedAccessKey: ${sharedAccessKey}
+
+info:
+    serviceLinks:
+        api-doc: "${route.name}/docs/index.html"
+
+logging:
+    level:
+        org:
+            springframework: WARN
+            apache.catalina: WARN
+            hibernate: WARN
+
+aurora:
+  trace:
+    exporter:
+      enabled: false

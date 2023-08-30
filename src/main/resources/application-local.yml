@@ -1,0 +1,7 @@
+
+management:
+    server.port: 8081
+
+logging:
+    pattern:
+        console: "%d [%-9.9thread] %-5level %logger %X - %msg %n%rEx{full}"

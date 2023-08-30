@@ -1,0 +1,19 @@
+s3:
+    enabled: true
+    buckets:
+        referanse-kotlin:
+            serviceEndpoint: "http://localhost:${s3.test.mock-port}"
+            accessKey: minio
+            secretKey: miniosecret
+            bucketName: default
+            objectPrefix: refapp
+            bucketRegion: us-east-1
+        referanse-kotlin2:
+            serviceEndpoint: "http://localhost:${s3.test.mock-port}"
+            accessKey: minio
+            secretKey: miniosecret
+            bucketName: default
+            objectPrefix: refapp2
+            bucketRegion: us-east-1
+    test:
+        mock-port: "8992"
